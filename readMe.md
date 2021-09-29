@@ -9,3 +9,6 @@ Portfolio website for Dakota Schramm
         should limit projects being showcased on main page.
     - Figure out how to build portfolio using a template
         instead of making new page for each.
+    - Change c.html --> Remove header placed above where 
+    headers supposed to go in content section, just do with 
+    one header and list underneath for topics after going to page.
