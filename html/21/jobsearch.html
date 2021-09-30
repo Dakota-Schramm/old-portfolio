@@ -76,8 +76,36 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="content"> 
       <!-- ################################################################################################ -->
-      <h2><a href="https://github.com/Dakota-Schramm/job-search">Job Search Scripts</a></h2>
-      <p>Lorem ipsum.</p>
+      <h2><a href="https://github.com/Dakota-Schramm/job-search"><b><u>Job Search Scripts</u></b></a></h2>
+      <p>This is a work in progress.</p>
+      <h3>The Problem</h3>
+      <p>With so many job boards out there, there's many different services that people depend on with the process. Most people tend to use these websites and personally do most of the work that's involved with it. I wanted to see if there were certain steps I could automate in this process so I could spend more time preparing for other parts of the process.
+      </p>
+      <p>I wasn't the only one who thought this. Since other's had previosuly worked on this same project, most of them focusing on one specific job board, I wanted to see if I could use that work for myself.
+      </p>
+      <h3>The Solution</h3>
+      <p>By creating something that can run these other works as subprocesses, I can run individual searches on specific job boards. This master process is then able to collect all input from the subprocesses, clean the data, and import them into a table.
+      </p>
+      <p>This import is helpful for a few reasons:</p>
+      <ul>
+        <li>Lists can be easily sorted through in this manner.</li>
+        <li>This method prevents duplicate listings from entering my search.</li>
+        <li>This list can be easily converted into an Excel sheet that I can use personally to keep track of what I apply to.</li>
+      </ul>
+      <h3>What I did</h3>
+      <p>I created a wrapper class in Python that would run different programs through the subprocess module. By capturing the input from each search, cleaning the data, and importing it into a master table, I can collectively look at all jobs I might be interested in but the job boards would've forced me to look at separately.
+      </p>
+      <p>By pulling everything into a table, I make it easy to easily sort through all jobs based on specific preferences and get a more wholelistic search when I look through them each time.
+      </p>
+      <p>This pull happens everytime a search is done in a subprocess and prints to STDOUT all job listings for a certain query.
+      </p>
+      <p>After completing the search, the results are appended to the master google sheet and sorted.</p>
+      <p>The search is divided up into its appropriate pages in the Excel sheet.</p>
+      <h3>What I want to do next</h3>
+      <ul>
+        <li>Focus more on the sorting algorithm so that jobs near the top of the page are closer to user preferences.</li>
+        <li>Create summary sheets in Excel if I want to look at a certain search method's results.</li>
+    </ul>
   </main>
 </div>
 <!-- ################################################################################################ -->
