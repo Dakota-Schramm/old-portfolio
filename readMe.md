@@ -13,3 +13,5 @@ Portfolio website for Dakota Schramm
     headers supposed to go in content section, just do with 
     one header and list underneath for topics after going to page.
     - Change footer to have contact info at bottom of every page.
+        - Can do using class fl_left in footer with list
+        - Add icons to list and just input that way.
