@@ -12,3 +12,4 @@ Portfolio website for Dakota Schramm
     - Change c.html --> Remove header placed above where 
     headers supposed to go in content section, just do with 
     one header and list underneath for topics after going to page.
+    - Change footer to have contact info at bottom of every page.
