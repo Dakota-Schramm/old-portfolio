@@ -1,0 +1,48 @@
+/*React stuff */
+class Quote extends React.Component {
+  // const currentQuote = getQuote();
+  // console.log(currentQuote);
+  constructor(props) {
+    super(props);
+    this.state = {
+      quote: "",
+    author: ""
+    } //Initialize state here.
+   }
+  componentDidMount() {
+    fetch("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            quote: result.quoteText,
+            author: result.quote
+          });
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          this.setState({
+            quote: "None",
+            author: "None",
+            error
+          });
+        }
+      )
+  }
+
+  // const quoteGen= "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?"
+        
+  render() {
+    return (
+      <div id="quote-box" class="container">
+        <p id="text">{this.state.quote}</p>
+        <p id="author">{this.state.author}</p>
+        <button id="new-quote">New Quote</button>
+        <a id="tweet-quote" href="twitter.com/intent/tweet"></a>
+      </div>
+    );
+  }
+};
+ReactDOM.render(<Quote />, document.getElementById('page'));

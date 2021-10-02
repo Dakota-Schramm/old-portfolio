@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<header>
+  <h1 id="title"> Survery Title </h1>
+  <p id="description"> Here is where I'll put the description for the survey. </p>
+</header>
+<main>
+  <form id="survey-form"> 
+    <label for="name" id="name-label"> Name: </label>
+    <input type="text" id=name required placeholder="Please enter your name"></input>
+  <label for="email" id="email-label"> Email: </label>
+  <input type="email" id=email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Please enter your email" required></input>
+<label for="number" id="number-label"> Age: </label>
+<input type="number" id="number" pattern="[0-9]+" min="1" max="130" placeholder="Please enter your age"required></input>
+<label for="best-pet"> Best pet:
+  <input type="radio" name="cat-dog" id="best-pet" value="cat"> Cat </input>
+  <input type="radio" name="cat-dog" id="best-pet" value="dog"> Dog </input>
+</label>
+<label for="places-been"> Which places have you been to?
+  <input type="checkbox" name="places" id="places" value="new-york">New York</input>
+<input type="checkbox" name="places" id="places" value="los-angeles">Los Angeles</input>
+<input type="checkbox" name="places" id="places" value="hawaii">Hawaii</input>
+</label>
+<select id="dropdown">
+        <option value="books">Books</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="php">PHP</option>
+        <option value="js">JavaScript</option>
+      </select>
+<textarea name="comments">Additional comments here:</textarea>
+<button type="submit" id=submit>Submit</button>
+  </form>
+  
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
