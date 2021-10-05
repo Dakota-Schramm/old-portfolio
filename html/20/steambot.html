@@ -79,8 +79,38 @@ Licence URI: https://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <h1><b><u>JAVASCRIPT</u></b></h1>
       <!-- TODO #14 Link to github and add collaborator role for employers. -->
-      <h2><a href="">Steam Bot</a></h2>
+      <h2><a href="https://github.com/Dakota-Schramm/Steam-Bot">Steam Bot</a></h2>
       <!-- TODO #16 Add content to Steam Bot-->
+      <p>A steam bot I created for personal use back when I frequently traded. This is a work in progress.</p>
+
+      <h3><u>The Problem</u></h3>
+      <p>It's often times difficult to be available to everyone at all times. This especially goes with strangers online. However, on Steam, I wanted to find a way to be available to people even when I'm not at my computer.</p>
+      <h3><u>The Solution</u></h3>
+      <p>By using event listeners, you can set up a bot that is able to respond to certain social actions upon receiving one. This is useful for a few actions in particular:</p>
+      <ul>
+        <li>Friend requests: I often receive a lot of these as its the main way users will attempt to interact with me on steam. This could fall under trade requests, random user requests, and phishing attempts.</li>
+        <li>Messages: Upon adding people, I would often receive some sort of message from them. There's no easy way to program a informal conversation with users, so the next best route is to create an interface 
+          that users could interact with. This works because I don't have to worry about the bots that added me to phish me, as they won't interact with the interface.</li>
+      </ul>
+
+      <h3><u>What I did</u></h3>
+      <p>I created a Steam bot in Javascript.</p>
+
+      <p>I looked through Steam's api and learned how I could interact with steam's social features using event listeners.</p>
+      <p>After logging in, the bot listens for friend requests and certain messages.</p>
+      <ul>
+        <li>Upon receiving a friend request, the bot is able to organize the friend into a list and send a message immediately to the user.</li>
+        <li>Upon receiving certain commands from the user, the bot is able to perform certain actions on command.</li>
+      </ul>
+      <p>Additionally, using the interface from my own Steam bot, I attempted to create a bot that would work with Coinbase, allow users to trade Etherum for in-game items, and store user balances. I was creating this for another person but they lost interest in the project before it was completed.
+      </p>
+
+      <h3><u>What I want to do next</u></h3>
+      <ul>
+        <li>Improve the interface for users.</li>
+        <li>Incorporate a database to help me organize social requests.</li>
+      </ul>
+    </div>
   </main>
 </div>
 <!-- ################################################################################################ -->
